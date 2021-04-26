@@ -1,0 +1,62 @@
+:root {
+    --speed: 3;
+  }
+
+#topic
+{
+    font-size: 50px;
+    text-shadow: 3px 3px 2px red;
+}
+
+.machine
+{
+    height: 400px;
+    width: 1000px;
+    margin-left: 300px;
+    margin-top: 100px;
+    border: solid 3px black;
+    background-color: rgb(133, 60, 129);
+    padding: 5px;
+    display: flex;
+}
+
+.slot
+{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 50px;
+    height: 300px;
+    width: 300px;
+    background-color: rgb(16, 99, 207);
+    border: solid 2px darkblue;
+
+    overflow: hidden;
+
+    font-size: 200px;
+}
+
+.value
+{
+    animation-name: slotspin;
+    animation-duration: calc((1s)/var(--speed));
+    animation-iteration-count: infinite;
+}
+
+#inputid
+{
+    height: 50px;
+    width: 200px;
+    margin-left: 50px;
+    font-size: 30px;
+}
+
+@keyframes slotspin {
+    0%
+    {
+        transform: translateY(-400px)
+    }
+    100%
+    {
+        transform: translateY(400px);
+    }
+}
